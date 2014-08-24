@@ -1,0 +1,388 @@
+
+.masthead {
+    color:#FFFFFF;
+    background-image:url("http://i.imgur.com/CtWlB0v.jpg?1");
+    background-repeat:no-repeat;
+    height:200px;
+}
+
+
+#header {
+		background: white;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+		color: inherit;
+		cursor: default;
+		font-size: 0.8em;
+		left: 0;
+		padding: 1em 1.5em;
+		position: fixed;
+		top: 0;
+		width: 92%;
+		z-index: 10000;
+	}
+
+		#header h1 {
+			font-weight: 500;
+			margin: 0;
+			color:white;
+		}
+
+			#header h1 span {
+				font-weight: 300;
+			}
+
+		#header nav {
+			/*letter-spacing: 0.075em;*/
+			position: absolute;
+			right: 1.5em;
+			text-transform: uppercase;
+			top: 0.75em;
+			font-family: 'Open Sans Condensed', 'moonflowerbold', sans-serif;
+			font-size: 1.3em;
+			color: white;
+			letter-spacing:0.3em;
+		}
+
+			#header nav ul li {
+				display: inline-block;
+				margin-left: 1.5em;
+			}
+
+				#header nav ul li > ul {
+					display: none;
+				}
+
+				#header nav ul li a {
+					border: solid 1px transparent;
+					color: inherit;
+					display: inline-block;
+					padding: 0em 0.75em;
+					text-decoration: none;
+				}
+
+				#header nav ul li .button {
+					font-size: 1em;
+					min-width: 0;
+					width: auto;
+				}
+
+				#header nav ul li.submenu > a:before {
+					-moz-osx-font-smoothing: grayscale;
+					-webkit-font-smoothing: antialiased;
+					font-family: FontAwesome;
+					font-style: normal;
+					font-weight: normal;
+				}
+
+				#header nav ul li.submenu > a:before {
+					content: '\f107';
+					margin-right: 0.65em;
+				}
+
+				#header nav ul li.active > a, #header nav ul li:hover > a {
+					-moz-transition: all 0.2s ease-in-out;
+					-webkit-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+					-ms-transition: all 0.2s ease-in-out;
+					transition: all 0.2s ease-in-out;
+					background: rgba(188, 202, 206, 0.15);
+				}
+
+				#header nav ul li.current > a {
+					font-weight: 900;
+				}
+
+		#header.reveal {
+			-moz-animation: reveal-header 0.5s;
+			-webkit-animation: reveal-header 0.5s;
+			-o-animation: reveal-header 0.5s;
+			-ms-animation: reveal-header 0.5s;
+			animation: reveal-header 0.5s;
+		}
+
+		#header.alt {
+			-moz-animation: none;
+			-webkit-animation: none;
+			-o-animation: none;
+			-ms-animation: none;
+			animation: none;
+			background: transparent;
+			box-shadow: none;
+			color: white;
+			padding: 2em 2.5em;
+			position: absolute;
+		}
+
+			#header.alt nav {
+				right: 2.5em;
+				top: 1.75em;
+			}
+
+				#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
+					border: solid 1px;
+				}
+#logo {
+	font-size:5.0em;  /*1.750em;*/							/*1.750em*/
+	font-weight: normal;
+	color: white;
+	float:bottom left;
+	padding: 60px;
+}
+
+/*
+background: url(images/sunset.jpg) center no-repeat, yellow; 
+    height:100%; 
+     width:100%;*/
+
+nav {
+	text-align: center
+}
+
+header nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+}
+
+nav a:hover {
+	color:#FFFFFF;
+}
+
+#wrapper {
+	max-width: 940px;
+	margin: 0 auto;
+/*	border-bottom: 8px solid #000000; */
+	padding:30px;
+}
+	#wrapper p {
+	font-family: sans-serif;
+	}
+
+#curs {
+font-family:'Lobster', sans-serif;
+font-size:0.5em;
+}
+
+section {
+	background: white;
+/*	border-bottom: 8px solid #000000; */
+}
+
+footer {
+	background: transparent;
+}
+
+@font-face {
+  font-family: "moonflowerbold";
+  src: url("moonflowerbold.ttf");
+}
+
+a {
+	color: #000000;			/*#4fb69f*/
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:4.0em;   /*1.750em;*/							/*1.750em*/
+	font-weight: normal;
+	color: black;
+	/*letter-spacing: -1.5px;*/
+}
+
+h2 {
+	font-weight: 100;
+	font-size: 1.500em;
+	color: white;/*#b4c34f;*/
+}
+
+h3 {
+	font-weight: 100;
+	font-size: 1.125em;
+	color: #ed6c85;
+}
+
+
+/* Banner */
+	@-moz-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-webkit-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-o-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-ms-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+	#banner {
+	
+			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+			-o-animation: reveal-banner 1s 0.25s ease-in-out;
+			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+			animation: reveal-banner 1s 0.25s ease-in-out;
+			-moz-animation-fill-mode: forwards;
+			-webkit-animation-fill-mode: forwards;
+			-o-animation-fill-mode: forwards;
+			-ms-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+	
+		background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/sunset.jpg");
+		background-position: bottom center;/*bottom left, bottom right, top left, top center;*/
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+		background-size: 25em, 25em, auto, cover;
+		color: white;
+		cursor: default;
+		padding: 6em /*0*/;
+		text-align: center;
+	}
+	
+	#banner2 {
+	
+			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+			-o-animation: reveal-banner 1s 0.25s ease-in-out;
+			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+			animation: reveal-banner 1s 0.25s ease-in-out;
+			-moz-animation-fill-mode: forwards;
+			-webkit-animation-fill-mode: forwards;
+			-o-animation-fill-mode: forwards;
+			-ms-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+	
+		background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/seaoats.jpg");
+		background-position: bottom center;/*bottom left, bottom right, top left, top center;*/
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+		background-size: 25em, 25em, auto, cover;
+		color: white;
+		cursor: default;
+		padding: 6em /*0*/;
+		text-align: center;
+	}
+
+	#banner3 {
+	
+			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+			-o-animation: reveal-banner 1s 0.25s ease-in-out;
+			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+			animation: reveal-banner 1s 0.25s ease-in-out;
+			-moz-animation-fill-mode: forwards;
+			-webkit-animation-fill-mode: forwards;
+			-o-animation-fill-mode: forwards;
+			-ms-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+	
+		background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/water.jpg");
+		background-position: bottom center;/*bottom left, bottom right, top left, top center;*/
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+		background-size: 25em, 25em, auto, cover;
+		color: white;
+		cursor: default;
+		padding: 6em /*0*/;
+		text-align: center;
+	}
+
+		#banner .inner {
+			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+			-o-animation: reveal-banner 1s 0.25s ease-in-out;
+			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+			animation: reveal-banner 1s 0.25s ease-in-out;
+			-moz-animation-fill-mode: forwards;
+			-webkit-animation-fill-mode: forwards;
+			-o-animation-fill-mode: forwards;
+			-ms-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			/*background: rgba(52, 27, 43, 0.5);*/
+			color: white;
+			display: inline-block;
+			opacity: 0;
+			padding: 3em;
+			text-align: center;
+		}
+
+			#banner .inner header {
+				display: inline-block;
+				border-bottom: solid 4px;
+				border-top: solid 4px;
+				margin: 0 0 2em 0;
+				padding: 3px 0 3px 0;
+			}
+
+				#banner .inner header h2 {
+					border-bottom: solid 2px;
+					border-top: solid 2px;
+					font-size: 2.5em;
+					font-weight: 900;
+					letter-spacing: 0.2em;
+					margin: 0;
+					padding-left: 0.05em;
+					position: relative;
+					text-transform: uppercase;
+				}
+
+			#banner .inner p {
+				font-family:'Libre Baskerville', sans-serif;
+				size: 6.0em;
+			/*	letter-spacing: 0.1em;
+				margin: 0;*/
+			/*	text-transform: uppercase;*/
+			}
+
+				#banner .inner p a {
+					color: inherit;
+					font-weight: 400;
+					text-decoration: none;
+				}
+
+			#banner .inner footer {
+				margin: 2em 0 0 0;
+			}
+			
+			#banner h1 {
+			font-family:'Lato', sans-serif;
+			}
+			
+			#banner p {
+			font-family:'Open Sans Condensed', 'Lato', sans-serif;
+			color:white;
+			size:3.0em;
+			text-align:center;
+			/*width:80%;*/
+			/*letter-spacing:0.2em;*/
+			}
+
+			#banner3 p {
+			font-family: 'Open Sans Condensed', 'Lato', sans-serif;
+			color:white;
+			size:3.0em;
+			text-align:center;
+			/*width:80%;*/
+			/*letter-spacing:0.2em;*/
+			}
+
+#cesiumContainer {
+	height: 500 px; 
+	width: 500 px;
+}
+
+#copyright {
+	font-family: 'Lobster', sans-serif;
+	font-size: 2.0em;
+	/*border-top: 8px solid #000000;*/
+	padding: 10px 0;
+	margin: /*15px */0 auto;
+	text-align: center;
+	background-color: transparent;
+	
+}
